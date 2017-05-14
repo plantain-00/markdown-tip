@@ -8,7 +8,7 @@ import { getLocale, Data } from "./common";
     props: ["locale"],
 })
 class MarkdownTip extends Vue {
-    locale: string;
+    locale?: string;
 
     datas = getLocale(this.locale);
 

@@ -3,7 +3,8 @@ const path = require("path");
 
 module.exports = {
     entry: {
-        vue: "./demo/vue/index"
+        vue: "./demo/vue/index",
+        angular: "./demo/angular/index",
     },
     output: {
         path: __dirname,
