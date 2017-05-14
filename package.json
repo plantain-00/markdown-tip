@@ -1,0 +1,54 @@
+{
+  "name": "markdown-tip",
+  "version": "1.0.0",
+  "description": "A markdown tip component.",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc -p src && tsc -p demo",
+    "tslint": "tslint \"src/**/*.ts\" \"src/**/*.tsx\"",
+    "rev-static": "rev-static --config demo/rev-static.config.js",
+    "webpack": "webpack --config demo/webpack.config.js",
+    "html-minifier": "html-minifier --collapse-whitespace --case-sensitive --collapse-inline-tag-whitespace src/vue.template.html -o src/vue.html",
+    "clean": "rimraf dist && rimraf demo/*.bundle-*.js",
+    "build": "npm run clean && npm run cpy && npm run html-minifier && npm run file2variable && npm run tsc && npm run webpack && npm run rev-static",
+    "lint": "npm run tslint",
+    "file2variable": "file2variable-cli src/vue.html -o src/vue-variables.ts",
+    "cpy": "cpy src/index.css dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plantain-00/markdown-tip.git"
+  },
+  "author": "York Yao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/plantain-00/markdown-tip/issues"
+  },
+  "homepage": "https://github.com/plantain-00/markdown-tip#readme",
+  "devDependencies": {
+    "@angular/common": "4.1.2",
+    "@angular/compiler": "4.1.2",
+    "@angular/core": "4.1.2",
+    "@angular/forms": "4.1.2",
+    "@angular/platform-browser": "4.1.2",
+    "@angular/platform-browser-dynamic": "4.1.2",
+    "core-js": "2.4.1",
+    "cpy-cli": "1.0.1",
+    "file2variable-cli": "1.0.0",
+    "html-minifier": "3.4.4",
+    "react": "15.5.4",
+    "react-dom": "15.5.4",
+    "rev-static": "2.4.2",
+    "rimraf": "2.6.1",
+    "rxjs": "5.4.0",
+    "tslint": "5.2.0",
+    "typescript": "2.3.2",
+    "vue": "2.3.3",
+    "vue-class-component": "5.0.1",
+    "webpack": "2.5.1",
+    "zone.js": "0.8.10"
+  },
+  "dependencies": {
+    "tslib": "1"
+  }
+}
