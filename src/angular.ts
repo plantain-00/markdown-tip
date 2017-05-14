@@ -1,10 +1,10 @@
 import { Component, Input } from "@angular/core";
-import { srcAngularHtml } from "./angular-variables";
+import { srcAngularTemplateHtml } from "./angular-variables";
 import { getLocale, Data } from "./common";
 
 @Component({
     selector: "markdown-tip",
-    template: srcAngularHtml,
+    template: srcAngularTemplateHtml,
 })
 export class MarkdownTipComponent {
     @Input()

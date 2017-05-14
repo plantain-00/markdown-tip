@@ -8,11 +8,10 @@
     "tslint": "tslint \"src/**/*.ts\" \"src/**/*.tsx\"",
     "rev-static": "rev-static --config demo/rev-static.config.js",
     "webpack": "webpack --config demo/webpack.config.js",
-    "html-minifier": "html-minifier --collapse-whitespace --case-sensitive --collapse-inline-tag-whitespace src/vue.template.html -o src/vue.html && html-minifier --collapse-whitespace --case-sensitive --collapse-inline-tag-whitespace src/angular.template.html -o src/angular.html",
     "clean": "rimraf dist && rimraf demo/*.bundle-*.js",
-    "build": "npm run clean && npm run cpy && npm run html-minifier && npm run file2variable && npm run tsc && npm run webpack && npm run rev-static",
+    "build": "npm run clean && npm run cpy && npm run file2variable && npm run tsc && npm run webpack && npm run rev-static",
     "lint": "npm run tslint",
-    "file2variable": "file2variable-cli src/vue.html -o src/vue-variables.ts && file2variable-cli src/angular.html -o src/angular-variables.ts",
+    "file2variable": "file2variable-cli src/vue.template.html -o src/vue-variables.ts --html-minify && file2variable-cli src/angular.template.html -o src/angular-variables.ts --html-minify",
     "cpy": "cpy src/markdown-tip.css dist/"
   },
   "repository": {
@@ -36,8 +35,7 @@
     "@types/react-dom": "15.5.0",
     "core-js": "2.4.1",
     "cpy-cli": "1.0.1",
-    "file2variable-cli": "1.0.0",
-    "html-minifier": "3.4.4",
+    "file2variable-cli": "1.1.0",
     "react": "15.5.4",
     "react-dom": "15.5.4",
     "rev-static": "2.4.2",
