@@ -1,6 +1,6 @@
 {
   "name": "markdown-tip",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A markdown tip component.",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "build": "npm run clean && npm run cpy && npm run html-minifier && npm run file2variable && npm run tsc && npm run webpack && npm run rev-static",
     "lint": "npm run tslint",
     "file2variable": "file2variable-cli src/vue.html -o src/vue-variables.ts && file2variable-cli src/angular.html -o src/angular-variables.ts",
-    "cpy": "cpy src/index.css dist/"
+    "cpy": "cpy src/markdown-tip.css dist/"
   },
   "repository": {
     "type": "git",

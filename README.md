@@ -14,7 +14,7 @@ A markdown tip component.
 #### link css
 
 ```html
-<link rel="stylesheet" href="./node_modules/markdown-tip/dist/index.css" />
+<link rel="stylesheet" href="./node_modules/markdown-tip/dist/markdown-tip.css" />
 ```
 
 #### vuejs component demo
@@ -82,3 +82,13 @@ locale | string | optional, support "zh-cn" for now
 + reactjs component
 + angular component
 + commonjs module
+
+#### change logs
+
+```bash
+// v1
+<link rel="stylesheet" href="./node_modules/markdown-tip/dist/index.css" />
+
+// v2
+<link rel="stylesheet" href="./node_modules/markdown-tip/dist/markdown-tip.css" />
+```
