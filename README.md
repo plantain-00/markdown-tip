@@ -26,7 +26,7 @@ import "markdown-tip/dist/vue";
 ```
 
 ```html
-<markdown-tip></markdown-tip>
+<markdown-tip locale="zh-cn"></markdown-tip>
 ```
 
 the online demo: https://plantain-00.github.io/markdown-tip/demo/vue/index.html
@@ -40,7 +40,7 @@ import { MarkdownTip } from "markdown-tip/dist/react";
 ```
 
 ```html
-<MarkdownTip>
+<MarkdownTip locale="zh-cn">
 </MarkdownTip>
 ```
 
@@ -62,7 +62,7 @@ class MainModule { }
 ```
 
 ```html
-<markdown-tip>
+<markdown-tip locale="zh-cn">
 </markdown-tip>
 ```
 
@@ -74,6 +74,7 @@ the source code of the demo: https://github.com/plantain-00/markdown-tip/tree/ma
 
 name | type | description
 --- | --- | ---
+locale | string | optional, support "zh-cn" for now
 
 #### features
 

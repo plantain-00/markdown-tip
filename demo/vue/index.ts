@@ -6,8 +6,7 @@ new Vue({
     el: "#container",
     data() {
         return {
+            locale: navigator.language,
         };
-    },
-    methods: {
     },
 });
