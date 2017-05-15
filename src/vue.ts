@@ -11,12 +11,13 @@ class MarkdownTip extends Vue {
     locale?: string;
 
     datas = getLocale(this.locale);
+    visibleText: string | null = null;
 
     mouseenter(data: Data) {
-        data.visible = true;
+        this.visibleText = data.text;
     }
     mouseleave(data: Data) {
-        data.visible = false;
+        this.visibleText = null;
     }
 }
 
