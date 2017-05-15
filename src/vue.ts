@@ -1,7 +1,7 @@
 import * as Vue from "vue";
 import Component from "vue-class-component";
 import { srcVueTemplateHtml } from "./vue-variables";
-import { getLocale, Data } from "./common";
+import * as common from "./common";
 
 @Component({
     template: srcVueTemplateHtml,
@@ -10,13 +10,15 @@ import { getLocale, Data } from "./common";
 class MarkdownTip extends Vue {
     locale?: string;
 
-    datas = getLocale(this.locale);
+    datas = common.getLocale(this.locale);
     visibleText: string | null = null;
+    titleClass = common.defaultTitleClass;
 
-    mouseenter(data: Data) {
+    mouseenter(data: common.Data, event: MouseEvent) {
         this.visibleText = data.text;
+        this.titleClass = common.getTitleClass(event.target as HTMLElement);
     }
-    mouseleave(data: Data) {
+    mouseleave(data: common.Data) {
         this.visibleText = null;
     }
 }

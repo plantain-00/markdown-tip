@@ -18,3 +18,11 @@
     background-color: #DDD;
     padding: 15px;
 }
+
+.markdown-tip-item-title-left {
+    left: 0;
+}
+
+.markdown-tip-item-title-right {
+    right: 0;
+}

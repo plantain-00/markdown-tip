@@ -35,13 +35,13 @@ _This is italic text_`,
     },
     {
         text: "Blockquote",
-        title: `> Blockquotes can also be nested...
->> ...by using additional greater-than signs right next to each other...
-> > > ...or with spaces between arrows.`,
+        title: `> Blockquotes can also be nested
+>> by using additional greater-than signs
+> > > or with spaces between arrows.`,
     },
     {
         text: "Unordered List",
-        title: `+ Create a list by starting a line with \`+\`, \`-\`, or \`*\`
+        title: `+ Create a list by starting a line
 + Sub-lists are made by indenting 2 spaces:
   - Marker character change forces new list start:
     * Ac tristique libero volutpat at
@@ -80,11 +80,11 @@ console.log(foo(5));
     },
     {
         text: "Table",
-        title: `| Option | Description |
-| ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |`,
+        title: `Option | Description
+--- | ---
+data | path
+engine | engine
+ext | extension`,
     },
     {
         text: "Link",
@@ -93,8 +93,8 @@ console.log(foo(5));
     },
     {
         text: "Image",
-        title: `![Minion](https://example.com/images/minion.png)
-![Stormtroopocat](https://example.com/images/stormtroopocat.jpg 'The Stormtroopocat')`,
+        title: `![bar](https://example.com/foo.png)
+![foo](https://example.com/foo.jpg 'foo')`,
     },
 ];
 
@@ -131,13 +131,13 @@ _This is italic text_`,
         },
         {
             text: "引用",
-            title: `> Blockquotes can also be nested...
->> ...by using additional greater-than signs right next to each other...
-> > > ...or with spaces between arrows.`,
+            title: `> Blockquotes can also be nested
+>> by using additional greater-than signs
+> > > or with spaces between arrows.`,
         },
         {
             text: "无序列表",
-            title: `+ Create a list by starting a line with \`+\`, \`-\`, or \`*\`
+            title: `+ Create a list by starting a line
 + Sub-lists are made by indenting 2 spaces:
   - Marker character change forces new list start:
     * Ac tristique libero volutpat at
@@ -176,11 +176,11 @@ console.log(foo(5));
         },
         {
             text: "表格",
-            title: `| Option | Description |
-| ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |`,
+            title: `Option | Description
+--- | ---
+data | path
+engine | engine
+ext | extension`,
         },
         {
             text: "链接",
@@ -189,8 +189,8 @@ console.log(foo(5));
         },
         {
             text: "图片",
-            title: `![Minion](https://example.com/images/minion.png)
-![Stormtroopocat](https://example.com/images/stormtroopocat.jpg 'The Stormtroopocat')`,
+            title: `![bar](https://example.com/foo.png)
+![foo](https://example.com/foo.jpg 'foo')`,
         },
     ],
 };
@@ -204,3 +204,10 @@ export function getLocale(name: string | undefined | Data[]): Data[] {
     }
     return name;
 }
+
+export function getTitleClass(element: HTMLElement) {
+    const position = element.getClientRects()[0].left > element.parentElement!.getClientRects()[0].width / 2 ? "right" : "left";
+    return `markdown-tip-item-title markdown-tip-item-title-${position}`;
+}
+
+export const defaultTitleClass = "markdown-tip-item-title-left";

@@ -1,6 +1,6 @@
 import { Component, Input } from "@angular/core";
 import { srcAngularTemplateHtml } from "./angular-variables";
-import { getLocale, Data } from "./common";
+import * as common from "./common";
 
 @Component({
     selector: "markdown-tip",
@@ -10,17 +10,19 @@ export class MarkdownTipComponent {
     @Input()
     locale?: string;
 
-    datas: Data[];
+    datas: common.Data[];
     visibleText: string | null = null;
+    titleClass = common.defaultTitleClass;
 
     ngOnInit() {
-        this.datas = getLocale(this.locale);
+        this.datas = common.getLocale(this.locale);
     }
 
-    mouseenter(data: Data) {
+    mouseenter(data: common.Data, event: MouseEvent) {
         this.visibleText = data.text;
+        this.titleClass = common.getTitleClass(event.target as HTMLElement);
     }
-    mouseleave(data: Data) {
+    mouseleave(data: common.Data) {
         this.visibleText = null;
     }
 }
