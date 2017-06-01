@@ -9,6 +9,5 @@ class App extends Vue {
     locale = navigator.language;
 }
 
-/* tslint:disable:no-unused-expression */
+// tslint:disable-next-line:no-unused-expression
 new App({ el: "#container" });
-/* tslint:enable:no-unused-expression */
