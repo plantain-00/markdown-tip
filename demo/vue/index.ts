@@ -3,7 +3,12 @@ import Component from "vue-class-component";
 import "../../dist/vue";
 
 @Component({
-    template: `<markdown-tip :locale="locale"></markdown-tip>`,
+    template: `
+    <div>
+        <a href="https://github.com/plantain-00/markdown-tip/tree/master/demo/vue/index.ts" target="_blank">the source code of the demo</a>
+        <markdown-tip :locale="locale"></markdown-tip>
+    </div>
+    `,
 })
 class App extends Vue {
     locale = navigator.language;

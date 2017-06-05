@@ -7,6 +7,13 @@
 # markdown-tip
 A markdown tip component.
 
+#### features
+
++ vuejs component
++ reactjs component
++ angular component
++ commonjs module
+
 #### install
 
 `npm i markdown-tip`
@@ -31,8 +38,6 @@ import "markdown-tip/dist/vue";
 
 the online demo: https://plantain-00.github.io/markdown-tip/demo/vue/index.html
 
-the source code of the demo: https://github.com/plantain-00/markdown-tip/tree/master/demo/vue
-
 #### reactjs component demo
 
 ```ts
@@ -45,8 +50,6 @@ import { MarkdownTip } from "markdown-tip/dist/react";
 ```
 
 the online demo: https://plantain-00.github.io/markdown-tip/demo/react/index.html
-
-the source code of the demo: https://github.com/plantain-00/markdown-tip/tree/master/demo/react
 
 #### angular component demo
 
@@ -68,20 +71,11 @@ class MainModule { }
 
 the online demo: https://plantain-00.github.io/markdown-tip/demo/angular/index.html
 
-the source code of the demo: https://github.com/plantain-00/markdown-tip/tree/master/demo/angular
-
 #### properties and events of the component
 
 name | type | description
 --- | --- | ---
 locale | string | optional, support "zh-cn" for now
-
-#### features
-
-+ vuejs component
-+ reactjs component
-+ angular component
-+ commonjs module
 
 #### change logs
 

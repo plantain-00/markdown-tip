@@ -12,7 +12,12 @@ import { Component } from "@angular/core";
 
 @Component({
     selector: "app",
-    template: `<markdown-tip [locale]="locale"></markdown-tip>`,
+    template: `
+    <div>
+        <a href="https://github.com/plantain-00/markdown-tip/tree/master/demo/angular/index.ts" target="_blank">the source code of the demo</a>
+        <markdown-tip [locale]="locale"></markdown-tip>
+    </div>
+    `,
 })
 export class MainComponent {
     locale = navigator.language;
