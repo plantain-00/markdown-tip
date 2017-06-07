@@ -45,3 +45,4 @@ demo/**/index.html
 src/vue.html
 src/react.html
 src/angular.html
+demo/**/*.css
