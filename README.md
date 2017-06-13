@@ -12,7 +12,6 @@ A markdown tip component.
 + vuejs component
 + reactjs component
 + angular component
-+ commonjs module
 
 #### install
 
