@@ -9,7 +9,7 @@
     "rev-static": "rev-static --config demo/rev-static.config.js",
     "webpack": "webpack --config demo/webpack.config.js",
     "cleancss": "cleancss -o dist/markdown-tip.min.css dist/markdown-tip.css && cleancss -o demo/index.bundle.css dist/markdown-tip.min.css ./node_modules/github-fork-ribbon-css/gh-fork-ribbon.css",
-    "clean": "rimraf dist && rimraf demo/*.bundle-*.js",
+    "clean": "rimraf dist && rimraf demo/**/index.bundle-*.js",
     "build": "npm run clean && npm run cpy && npm run file2variable && npm run tsc && npm run webpack && npm run cleancss && npm run rev-static",
     "lint": "npm run tslint",
     "file2variable": "file2variable-cli src/vue.template.html -o src/vue-variables.ts --html-minify && file2variable-cli src/angular.template.html -o src/angular-variables.ts --html-minify",
