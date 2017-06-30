@@ -11,9 +11,11 @@
     "cleancss": "cleancss -o dist/markdown-tip.min.css dist/markdown-tip.css && cleancss -o demo/index.bundle.css dist/markdown-tip.min.css ./node_modules/github-fork-ribbon-css/gh-fork-ribbon.css",
     "clean": "rimraf dist && rimraf demo/**/index.bundle-*.js",
     "build": "npm run clean && npm run cpy && npm run file2variable && npm run tsc && npm run webpack && npm run cleancss && npm run rev-static",
-    "lint": "npm run tslint",
+    "lint": "npm run tslint && npm run standard",
     "file2variable": "file2variable-cli src/vue.template.html -o src/vue-variables.ts --html-minify && file2variable-cli src/angular.template.html -o src/angular-variables.ts --html-minify",
-    "cpy": "cpy src/markdown-tip.css dist/"
+    "cpy": "cpy src/markdown-tip.css dist/",
+    "standard": "standard \"**/*.config.js\"",
+    "fix": "standard --fix \"**/*.config.js\""
   },
   "repository": {
     "type": "git",
@@ -44,6 +46,7 @@
     "rev-static": "2.4.2",
     "rimraf": "2.6.1",
     "rxjs": "5.4.0",
+    "standard": "10.0.2",
     "tslint": "5.4.0",
     "typescript": "2.4.0",
     "vue": "2.3.3",
