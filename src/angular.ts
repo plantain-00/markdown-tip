@@ -1,6 +1,7 @@
 import { Component, Input } from "@angular/core";
 import { angularTemplateHtml } from "./angular-variables";
 import * as common from "./common";
+export * from "./common";
 
 @Component({
     selector: "markdown-tip",

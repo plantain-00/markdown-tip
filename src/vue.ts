@@ -2,6 +2,7 @@ import Vue from "vue";
 import Component from "vue-class-component";
 import { vueTemplateHtml } from "./vue-variables";
 import * as common from "./common";
+export * from "./common";
 
 @Component({
     template: vueTemplateHtml,
