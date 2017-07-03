@@ -1,10 +1,10 @@
 import Vue from "vue";
 import Component from "vue-class-component";
-import { srcVueTemplateHtml } from "./vue-variables";
+import { vueTemplateHtml } from "./vue-variables";
 import * as common from "./common";
 
 @Component({
-    template: srcVueTemplateHtml,
+    template: vueTemplateHtml,
     props: ["locale"],
 })
 class MarkdownTip extends Vue {
