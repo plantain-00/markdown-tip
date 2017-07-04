@@ -1,6 +1,6 @@
 {
   "name": "markdown-tip",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A markdown tip component.",
   "main": "index.js",
   "scripts": {
