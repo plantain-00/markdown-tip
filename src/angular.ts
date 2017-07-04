@@ -9,7 +9,7 @@ export * from "./common";
 })
 export class MarkdownTipComponent {
     @Input()
-    locale?: string;
+    locale?: common.Locale;
 
     datas: common.Data[];
     visibleText: string | null = null;

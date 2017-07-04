@@ -9,7 +9,7 @@ export * from "./common";
     props: ["locale"],
 })
 class MarkdownTip extends Vue {
-    locale?: string;
+    locale: common.Locale | undefined;
 
     datas = common.getLocale(this.locale);
     visibleText: string | null = null;

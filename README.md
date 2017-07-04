@@ -12,6 +12,7 @@ A markdown tip component.
 + vuejs component
 + reactjs component
 + angular component
++ multiple-language
 
 #### install
 
@@ -32,7 +33,7 @@ import "markdown-tip/dist/vue";
 ```
 
 ```html
-<markdown-tip locale="zh-cn"></markdown-tip>
+<markdown-tip></markdown-tip>
 ```
 
 the online demo: https://plantain-00.github.io/markdown-tip/demo/vue/index.html
@@ -44,7 +45,7 @@ import { MarkdownTip } from "markdown-tip/dist/react";
 ```
 
 ```html
-<MarkdownTip locale="zh-cn">
+<MarkdownTip>
 </MarkdownTip>
 ```
 
@@ -64,7 +65,7 @@ class MainModule { }
 ```
 
 ```html
-<markdown-tip locale="zh-cn">
+<markdown-tip>
 </markdown-tip>
 ```
 
@@ -74,9 +75,17 @@ the online demo: https://plantain-00.github.io/markdown-tip/demo/angular/index.h
 
 name | type | description
 --- | --- | ---
-locale | string | optional, support "zh-cn" for now
+locale | Locale? | locale object
 
 #### change logs
+
+```bash
+// v3
+locale is an object that can be imported dynamicly
+
+// v2
+locale is a string
+```
 
 ```bash
 // v1

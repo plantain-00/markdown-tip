@@ -10,6 +10,8 @@ enableProdMode();
 
 import { Component } from "@angular/core";
 
+let locale: Locale | null = null;
+
 @Component({
     selector: "app",
     template: `
@@ -20,13 +22,13 @@ import { Component } from "@angular/core";
     `,
 })
 export class MainComponent {
-    locale = navigator.language;
+    locale = locale;
 }
 
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
-import { MarkdownTipComponent } from "../../dist/angular";
+import { MarkdownTipComponent, Locale } from "../../dist/angular";
 
 @NgModule({
     imports: [BrowserModule, FormsModule],
@@ -35,4 +37,17 @@ import { MarkdownTipComponent } from "../../dist/angular";
 })
 class MainModule { }
 
-platformBrowserDynamic().bootstrapModule(MainModule);
+function start() {
+    platformBrowserDynamic().bootstrapModule(MainModule);
+}
+
+if (navigator.language === "zh-CN") {
+    import ("../../dist/locales/" + navigator.language + ".js").then(module => {
+        locale = module.locale;
+        start();
+    }, error => {
+        start();
+    });
+} else {
+    start();
+}

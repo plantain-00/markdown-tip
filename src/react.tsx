@@ -2,7 +2,7 @@ import * as React from "react";
 import * as common from "./common";
 export * from "./common";
 
-export class MarkdownTip extends React.PureComponent<{ locale?: string }, {}> {
+export class MarkdownTip extends React.PureComponent<{ locale?: common.Locale | null }, {}> {
     visibleText: string | null = null;
     titleClass = common.defaultTitleClass;
     mouseenter(data: common.Data, event: React.MouseEvent<HTMLDivElement>) {
