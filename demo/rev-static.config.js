@@ -16,5 +16,6 @@ module.exports = {
   es6: false,
   less: false,
   scss: false,
-  base: 'demo'
+  base: 'demo',
+  fileSize: 'demo/file-size.json'
 }
