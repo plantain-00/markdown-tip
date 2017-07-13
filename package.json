@@ -1,6 +1,6 @@
 {
   "name": "markdown-tip",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "A markdown tip component.",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,8 @@
     "cpy": "cpy src/markdown-tip.css dist/",
     "standard": "standard \"**/*.config.js\"",
     "fix": "standard --fix \"**/*.config.js\"",
-    "test": "tsc -p spec && karma start spec/karma.config.js"
+    "test": "tsc -p spec && karma start spec/karma.config.js",
+    "release": "clean-release"
   },
   "repository": {
     "type": "git",
@@ -39,6 +40,7 @@
     "@types/react": "15.0.34",
     "@types/react-dom": "15.5.1",
     "clean-css-cli": "4.1.6",
+    "clean-release": "1.0.3",
     "core-js": "2.4.1",
     "cpy-cli": "1.0.1",
     "file2variable-cli": "1.4.0",
