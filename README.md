@@ -21,7 +21,7 @@ A markdown tip component.
 #### link css
 
 ```html
-<link rel="stylesheet" href="./node_modules/markdown-tip/dist/markdown-tip.css" />
+<link rel="stylesheet" href="./node_modules/markdown-tip/markdown-tip.css" />
 ```
 
 #### vuejs component demo
@@ -29,7 +29,7 @@ A markdown tip component.
 `npm i vue vue-class-component`
 
 ```ts
-import "markdown-tip/dist/vue";
+import "markdown-tip/vue";
 ```
 
 ```html
@@ -41,7 +41,7 @@ the online demo: https://plantain-00.github.io/markdown-tip/demo/vue/index.html
 #### reactjs component demo
 
 ```ts
-import { MarkdownTip } from "markdown-tip/dist/react";
+import { MarkdownTip } from "markdown-tip/react";
 ```
 
 ```html
@@ -54,7 +54,7 @@ the online demo: https://plantain-00.github.io/markdown-tip/demo/react/index.htm
 #### angular component demo
 
 ```ts
-import { MarkdownTipComponent } from "markdown-tip/dist/angular";
+import { MarkdownTipComponent } from "markdown-tip/angular";
 
 @NgModule({
     imports: [BrowserModule, FormsModule],
@@ -78,6 +78,18 @@ name | type | description
 locale | Locale? | locale object
 
 #### change logs
+
+```ts
+// v4
+import "markdown-tip/vue";
+import { MarkdownTip } from "markdown-tip/react";
+import { MarkdownTipComponent } from "markdown-tip/angular";
+
+// v3
+import "markdown-tip/dist/vue";
+import { MarkdownTip } from "markdown-tip/dist/react";
+import { MarkdownTipComponent } from "markdown-tip/dist/angular";
+```
 
 ```bash
 // v3
