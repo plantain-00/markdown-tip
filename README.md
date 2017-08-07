@@ -55,11 +55,11 @@ the online demo: https://plantain-00.github.io/markdown-tip/demo/react/index.htm
 #### angular component demo
 
 ```ts
-import { MarkdownTipComponent } from "markdown-tip/angular";
+import { MarkdownTipModule } from "markdown-tip/angular";
 
 @NgModule({
-    imports: [BrowserModule, FormsModule],
-    declarations: [MainComponent, MarkdownTipComponent],
+    imports: [BrowserModule, FormsModule, MarkdownTipModule],
+    declarations: [MainComponent],
     bootstrap: [MainComponent],
 })
 class MainModule { }

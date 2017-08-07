@@ -1,4 +1,5 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input, NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
 import { angularTemplateHtml } from "./angular-variables";
 import * as common from "./common";
 export * from "./common";
@@ -27,3 +28,16 @@ export class MarkdownTipComponent {
         this.visibleText = null;
     }
 }
+
+@NgModule({
+    declarations: [
+        MarkdownTipComponent,
+    ],
+    imports: [
+        CommonModule,
+    ],
+    exports: [
+        MarkdownTipComponent,
+    ],
+})
+export class MarkdownTipModule { }
