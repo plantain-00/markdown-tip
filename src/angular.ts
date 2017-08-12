@@ -4,6 +4,9 @@ import { angularTemplateHtml } from "./angular-variables";
 import * as common from "./common";
 export * from "./common";
 
+/**
+ * @public
+ */
 @Component({
     selector: "markdown-tip",
     template: angularTemplateHtml,
@@ -29,6 +32,9 @@ export class MarkdownTipComponent {
     }
 }
 
+/**
+ * @public
+ */
 @NgModule({
     declarations: [
         MarkdownTipComponent,

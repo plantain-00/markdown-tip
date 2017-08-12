@@ -21,7 +21,7 @@ let locale: Locale | null = null;
     </div>
     `,
 })
-export class MainComponent {
+class MainComponent {
     locale = locale;
 }
 

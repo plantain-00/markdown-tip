@@ -1,5 +1,8 @@
 import { Locale } from "../common";
 
+/**
+ * @public
+ */
 export const locale: Locale = [
     {
         text: "标题",
