@@ -5,7 +5,7 @@ import { MarkdownTip, Locale } from "../../dist/react";
 let locale: Locale | null = null;
 
 class Main extends React.Component<{}, {}> {
-    locale = locale;
+    private locale = locale;
 
     render() {
         return (
