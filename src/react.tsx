@@ -6,17 +6,8 @@ export * from "./common";
  * @public
  */
 export class MarkdownTip extends React.PureComponent<{ locale?: common.Locale | null }, {}> {
-    visibleText: string | null = null;
-    titleClass = common.defaultTitleClass;
-    mouseenter(data: common.Data, event: React.MouseEvent<HTMLDivElement>) {
-        this.visibleText = data.text;
-        this.titleClass = common.getTitleClass(event.target as HTMLElement);
-        this.setState({ visibleText: this.visibleText, titleClass: this.titleClass });
-    }
-    mouseleave(data: common.Data) {
-        this.visibleText = null;
-        this.setState({ visibleText: this.visibleText });
-    }
+    private visibleText: string | null = null;
+    private titleClass = common.defaultTitleClass;
 
     render() {
         const datas = common.getLocale(this.props.locale);
@@ -36,5 +27,14 @@ export class MarkdownTip extends React.PureComponent<{ locale?: common.Locale | 
                 {items}
             </div>
         );
+    }
+    private mouseenter(data: common.Data, event: React.MouseEvent<HTMLDivElement>) {
+        this.visibleText = data.text;
+        this.titleClass = common.getTitleClass(event.target as HTMLElement);
+        this.setState({ visibleText: this.visibleText, titleClass: this.titleClass });
+    }
+    private mouseleave(data: common.Data) {
+        this.visibleText = null;
+        this.setState({ visibleText: this.visibleText });
     }
 }
