@@ -50,5 +50,13 @@ module.exports = {
     js: `standard --fix "**/*.config.js"`
   },
   release: `clean-release`,
-  watch: `watch-then-execute "src/**/*.ts" "src/**/*.tsx" "demo/**/*.ts" "demo/**/*.tsx" "src/**/*.template.html" --exclude "src/compiled/**/*,src/*-variables.ts" --script "npm run build"`
+  watch: {
+    vue: `file2variable-cli src/vue.template.html -o src/vue-variables.ts --html-minify --base src --watch`,
+    angular: `file2variable-cli src/angular.template.html -o src/angular-variables.ts --html-minify --base src --watch`,
+    src: `tsc -p src --watch`,
+    demo: `tsc -p demo --watch`,
+    webpack: `webpack --config demo/webpack.config.js --watch`,
+    css: `watch-then-execute "src/markdown-tip.css" --script "clean-scripts build[2].css"`,
+    rev: `rev-static --config demo/rev-static.config.js --watch`
+  }
 }
