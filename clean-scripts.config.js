@@ -18,7 +18,7 @@ module.exports = {
         `webpack --display-modules --config demo/webpack.config.js`
       ],
       css: [
-        `cpy src/markdown-tip.css dist/`,
+        `postcss src/markdown-tip.css -o dist/markdown-tip.css`,
         `cleancss -o dist/markdown-tip.min.css dist/markdown-tip.css`,
         `cleancss -o demo/index.bundle.css dist/markdown-tip.min.css ./node_modules/github-fork-ribbon-css/gh-fork-ribbon.css`
       ],
