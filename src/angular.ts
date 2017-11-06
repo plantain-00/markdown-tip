@@ -30,6 +30,9 @@ export class MarkdownTipComponent {
     mouseleave(data: common.Data) {
         this.visibleText = null;
     }
+    trackBy(data: common.Data) {
+        return data.text;
+    }
 }
 
 /**

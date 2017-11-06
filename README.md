@@ -57,6 +57,9 @@ the online demo: https://plantain-00.github.io/markdown-tip/demo/react/index.htm
 ```ts
 import { MarkdownTipModule } from "markdown-tip/angular";
 
+// for angular AOT:
+// import { MarkdownTipModule } from "markdown-tip/aot/angular";
+
 @NgModule({
     imports: [BrowserModule, FormsModule, MarkdownTipModule],
     declarations: [MainComponent],
@@ -79,6 +82,14 @@ name | type | description
 locale | Locale? | locale object
 
 #### change logs
+
+```ts
+// v4 angular AOT:
+import { MarkdownTipModule } from "markdown-tip/angular";
+
+// v5 angular AOT:
+import { MarkdownTipModule } from "markdown-tip/aot/angular";
+```
 
 ```ts
 // v4
