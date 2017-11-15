@@ -5,7 +5,10 @@ export type Data = {
 
 export type Locale = Data[];
 
-const defaultLocale: Locale = [
+/**
+ * @public
+ */
+export const defaultLocale: Locale = [
     {
         text: "Heading",
         title: `# h1 Heading
