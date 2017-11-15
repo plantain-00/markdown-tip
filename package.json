@@ -1,6 +1,6 @@
 {
   "name": "markdown-tip",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "A markdown tip component.",
   "main": "index.js",
   "scripts": {
@@ -59,7 +59,7 @@
     "rxjs": "5.5.2",
     "standard": "10.0.3",
     "tslint": "5.8.0",
-    "typescript": "2.6.1",
+    "typescript": "2.4.2",
     "vue": "2.5.3",
     "vue-class-component": "6.1.0",
     "watch-then-execute": "1.1.1",
