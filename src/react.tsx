@@ -12,10 +12,10 @@ export class MarkdownTip extends React.PureComponent<{ locale?: common.Locale | 
     render() {
         const datas = common.getLocale(this.props.locale);
 
-        const items = datas.map(data => {
+        const items = datas.map((data, i) => {
             const title = data.text === this.visibleText ? <pre className={this.titleClass}>{data.title}</pre> : null;
             return (
-                <div className="markdown-tip-item" onMouseEnter={e => this.mouseenter(data, e)} onMouseLeave={e => this.mouseleave(data)}>
+                <div className="markdown-tip-item" key={i} onMouseEnter={e => this.mouseenter(data, e)} onMouseLeave={e => this.mouseleave(data)}>
                     <span className="markdown-tip-item-text">{data.text}</span>
                     {title}
                 </div>

@@ -1,6 +1,6 @@
 {
   "name": "markdown-tip",
-  "version": "5.0.3",
+  "version": "5.0.4",
   "description": "A markdown tip component.",
   "scripts": {
     "build": "clean-scripts build",
