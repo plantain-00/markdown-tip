@@ -15,34 +15,30 @@ A markdown tip component.
 + angular component
 + multiple-language
 
-#### install
-
-`npm i markdown-tip`
-
 #### link css
 
 ```html
 <link rel="stylesheet" href="./node_modules/markdown-tip/markdown-tip.css" />
 ```
 
-#### vuejs component demo
+#### vuejs component
 
-`npm i vue vue-class-component`
+`npm i markdown-tip-vue`
 
 ```ts
-import "markdown-tip/vue";
+import "markdown-tip-vue";
 ```
 
 ```html
 <markdown-tip></markdown-tip>
 ```
 
-the online demo: https://plantain-00.github.io/markdown-tip/demo/vue/index.html
+the online demo: https://plantain-00.github.io/markdown-tip/packages/vue/demo
 
-#### reactjs component demo
+#### reactjs component
 
 ```ts
-import { MarkdownTip } from "markdown-tip/react";
+import { MarkdownTip } from "markdown-tip-react";
 ```
 
 ```html
@@ -50,15 +46,12 @@ import { MarkdownTip } from "markdown-tip/react";
 </MarkdownTip>
 ```
 
-the online demo: https://plantain-00.github.io/markdown-tip/demo/react/index.html
+the online demo: https://plantain-00.github.io/markdown-tip/packages/react/demo
 
-#### angular component demo
+#### angular component
 
 ```ts
-import { MarkdownTipModule } from "markdown-tip/angular";
-
-// for angular AOT:
-// import { MarkdownTipModule } from "markdown-tip/aot/angular";
+import { MarkdownTipModule } from "markdown-tip-angular";
 
 @NgModule({
     imports: [BrowserModule, FormsModule, MarkdownTipModule],
@@ -73,9 +66,9 @@ class MainModule { }
 </markdown-tip>
 ```
 
-the online demo: https://plantain-00.github.io/markdown-tip/demo/angular/index.html
+the online demo: https://plantain-00.github.io/markdown-tip/packages/angular/demo/jit
 
-the AOT online demo: https://plantain-00.github.io/markdown-tip/demo/aot/index.html
+the AOT online demo: https://plantain-00.github.io/markdown-tip/packages/angular/demo/aot
 
 #### properties and events of the component
 
@@ -84,6 +77,28 @@ name | type | description
 locale | Locale? | locale object
 
 #### change logs
+
+```bash
+# v5
+npm i markdown-tip
+
+# v6
+npm i markdown-tip-vue
+npm i markdown-tip-react
+npm i markdown-tip-angular
+```
+
+```ts
+// v5
+import "markdown-tip/vue";
+import { MarkdownTip } from "markdown-tip/react";
+import { MarkdownTipModule } from "markdown-tip/angular";
+
+// v6
+import "markdown-tip-vue";
+import { MarkdownTip } from "markdown-tip-react";
+import { MarkdownTipModule } from "markdown-tip-angular";
+```
 
 ```ts
 // v4 angular AOT:

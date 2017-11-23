@@ -1,0 +1,23 @@
+{
+  "name": "markdown-tip-react",
+  "version": "6.0.0",
+  "description": "A markdown tip component.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plantain-00/markdown-tip.git"
+  },
+  "author": "York Yao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/plantain-00/markdown-tip/issues"
+  },
+  "homepage": "https://github.com/plantain-00/markdown-tip#readme",
+  "dependencies": {
+    "markdown-tip": "^6.0.0",
+    "react": "16",
+    "react-dom": "16",
+    "tslib": "1"
+  }
+}

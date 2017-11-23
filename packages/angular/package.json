@@ -1,0 +1,31 @@
+{
+  "name": "markdown-tip-angular",
+  "version": "6.0.0",
+  "description": "A markdown tip component.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plantain-00/markdown-tip.git"
+  },
+  "author": "York Yao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/plantain-00/markdown-tip/issues"
+  },
+  "homepage": "https://github.com/plantain-00/markdown-tip#readme",
+  "dependencies": {
+    "@angular/common": "5",
+    "@angular/compiler": "5",
+    "@angular/compiler-cli": "5",
+    "@angular/core": "5",
+    "@angular/forms": "5",
+    "@angular/platform-browser": "5",
+    "@angular/platform-browser-dynamic": "5",
+    "core-js": "2",
+    "markdown-tip": "^6.0.0",
+    "rxjs": "5",
+    "tslib": "1",
+    "zone.js": "0.8"
+  }
+}

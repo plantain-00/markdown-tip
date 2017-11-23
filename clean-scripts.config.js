@@ -1,26 +1,31 @@
 const { Service, checkGitStatus, executeScriptAsync } = require('clean-scripts')
 const { watch } = require('watch-then-execute')
 
-const tsFiles = `"src/**/*.ts" "src/**/*.tsx" "spec/**/*.ts" "demo/**/*.ts" "demo/**/*.tsx" "screenshots/**/*.ts"`
-const jsFiles = `"*.config.js" "demo/*.config.js" "spec/**/*.config.js"`
-const excludeTsFiles = `"demo/**/*.d.ts"`
+const tsFiles = `"packages/@(core|vue|react|angular)/@(src|demo)/**/*.@(ts|tsx)" "spec/**/*.ts" "screenshots/**/*.ts"`
+const lessFiles = `"packages/core/src/**/*.less"`
+const jsFiles = `"*.config.js" "spec/**/*.config.js"`
+const excludeTsFiles = `"packages/@(core|vue|react|angular)/@(src|demo)/**/*.d.ts"`
 
-const vueTemplateCommand = `file2variable-cli src/vue.template.html -o src/vue-variables.ts --html-minify --base src`
-const angularTemplateCommand = `file2variable-cli src/angular.template.html -o src/angular-variables.ts --html-minify --base src`
+const vueTemplateCommand = `file2variable-cli packages/vue/src/index.template.html -o packages/vue/src/variables.ts --html-minify --base packages/vue/src/`
+const angularTemplateCommand = `file2variable-cli packages/angular/src/index.template.html -o packages/angular/src/variables.ts --html-minify --base packages/angular/src`
 const ngcSrcCommand = [
-  `tsc -p src`,
-  `ngc -p src/tsconfig.aot.json`
+  `ngc -p packages/core/src`,
+  `tsc -p packages/vue/src`,
+  `tsc -p packages/react/src`,
+  `ngc -p packages/angular/src`
 ]
 const tscDemoCommand = [
-  `tsc -p demo`,
-  `ngc -p demo/tsconfig.aot.json`
+  `tsc -p packages/vue/demo`,
+  `tsc -p packages/react/demo`,
+  `ngc -p packages/angular/demo`
 ]
-const webpackCommand = `webpack --display-modules --config demo/webpack.config.js`
-const revStaticCommand = `rev-static --config demo/rev-static.config.js`
+const webpackCommand = `webpack`
+const revStaticCommand = `rev-static`
 const cssCommand = [
-  `postcss src/markdown-tip.css -o dist/markdown-tip.css`,
-  `cleancss -o dist/markdown-tip.min.css dist/markdown-tip.css`,
-  `cleancss -o demo/index.bundle.css dist/markdown-tip.min.css ./node_modules/github-fork-ribbon-css/gh-fork-ribbon.css`
+  `lessc packages/core/src/markdown-tip.less -sm=on > packages/core/src/markdown-tip.css`,
+  `postcss packages/core/src/markdown-tip.css -o packages/core/dist/markdown-tip.css`,
+  `cleancss packages/core/dist/markdown-tip.css -o packages/core/dist/markdown-tip.min.css`,
+  `cleancss packages/core/dist/markdown-tip.min.css ./node_modules/github-fork-ribbon-css/gh-fork-ribbon.css -o packages/core/demo/index.bundle.css`
 ]
 
 module.exports = {
@@ -38,13 +43,14 @@ module.exports = {
         webpackCommand
       ],
       css: cssCommand,
-      clean: `rimraf demo/**/*.bundle-*.js`
+      clean: `rimraf "packages/@(core|vue|react|angular)/demo/**/*.@(index.bundle-*.js|*.bundle-*.css)"`
     },
     revStaticCommand
   ],
   lint: {
     ts: `tslint ${tsFiles} --exclude ${excludeTsFiles}`,
     js: `standard ${jsFiles}`,
+    less: `stylelint ${lessFiles}`,
     export: `no-unused-export ${tsFiles} --exclude ${excludeTsFiles}`,
     commit: `commitlint --from=HEAD~1`
   },
@@ -55,9 +61,9 @@ module.exports = {
   ],
   fix: {
     ts: `tslint --fix ${tsFiles} --exclude ${excludeTsFiles}`,
-    js: `standard --fix ${jsFiles}`
+    js: `standard --fix ${jsFiles}`,
+    less: `stylelint --fix ${lessFiles}`
   },
-  release: `clean-release`,
   watch: {
     vue: `${vueTemplateCommand} --watch`,
     angular: `${angularTemplateCommand} --watch`,
