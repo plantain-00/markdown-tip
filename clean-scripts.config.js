@@ -43,7 +43,7 @@ module.exports = {
         webpackCommand
       ],
       css: cssCommand,
-      clean: `rimraf "packages/@(core|vue|react|angular)/demo/**/*.@(index.bundle-*.js|*.bundle-*.css)"`
+      clean: `rimraf "packages/@(core|vue|react|angular)/demo/**/@(*.bundle-*.js|*.bundle-*.css)"`
     },
     revStaticCommand
   ],
