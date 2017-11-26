@@ -18,7 +18,7 @@ A markdown tip component.
 #### link css
 
 ```html
-<link rel="stylesheet" href="./node_modules/markdown-tip/markdown-tip.css" />
+<link rel="stylesheet" href="./node_modules/markdown-tip/dist/markdown-tip.css" />
 ```
 
 #### vuejs component
@@ -98,6 +98,14 @@ import { MarkdownTipModule } from "markdown-tip/angular";
 import "markdown-tip-vue";
 import { MarkdownTip } from "markdown-tip-react";
 import { MarkdownTipModule } from "markdown-tip-angular";
+```
+
+```html
+// v5
+<link rel="stylesheet" href="./node_modules/markdown-tip/markdown-tip.css" />
+
+// v6
+<link rel="stylesheet" href="./node_modules/markdown-tip/dist/markdown-tip.css" />
 ```
 
 ```ts
