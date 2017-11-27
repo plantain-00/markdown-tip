@@ -13,5 +13,8 @@
   "bugs": {
     "url": "https://github.com/plantain-00/markdown-tip/issues"
   },
-  "homepage": "https://github.com/plantain-00/markdown-tip#readme"
+  "homepage": "https://github.com/plantain-00/markdown-tip#readme",
+  "dependencies": {
+    "tslib": "1"
+  }
 }

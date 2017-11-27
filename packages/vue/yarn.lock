@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-tslib@1:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.8.0.tgz#dc604ebad64bcbf696d613da6c954aa0e7ea1eb6"
+markdown-tip@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-tip/-/markdown-tip-6.0.0.tgz#917ea625a40d7d255b8db57eeb275acb5ec6633f"
 
 vue-class-component@6:
   version "6.1.0"

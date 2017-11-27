@@ -16,7 +16,6 @@
   "homepage": "https://github.com/plantain-00/markdown-tip#readme",
   "dependencies": {
     "markdown-tip": "^6.0.0",
-    "tslib": "1",
     "vue": "2",
     "vue-class-component": "6"
   }
