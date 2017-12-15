@@ -5,10 +5,10 @@ import * as common from "markdown-tip";
 export * from "markdown-tip";
 
 @Component({
-    template: indexTemplateHtml,
+    render: indexTemplateHtml,
     props: ["locale"],
 })
-class MarkdownTip extends Vue {
+export class MarkdownTip extends Vue {
     locale: common.Locale | undefined;
 
     datas = common.getLocale(this.locale);
