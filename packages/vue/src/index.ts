@@ -1,11 +1,12 @@
 import Vue from "vue";
 import Component from "vue-class-component";
-import { indexTemplateHtml } from "./variables";
+import { indexTemplateHtml, indexTemplateHtmlStatic } from "./variables";
 import * as common from "markdown-tip";
 export * from "markdown-tip";
 
 @Component({
     render: indexTemplateHtml,
+    staticRenderFns: indexTemplateHtmlStatic,
     props: ["locale"],
 })
 export class MarkdownTip extends Vue {
