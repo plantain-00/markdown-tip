@@ -1,6 +1,6 @@
 {
   "name": "markdown-tip-react",
-  "version": "6.0.1",
+  "version": "6.1.1",
   "description": "A markdown tip component.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,13 +14,21 @@
     "url": "https://github.com/plantain-00/markdown-tip/issues"
   },
   "homepage": "https://github.com/plantain-00/markdown-tip#readme",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
-    "markdown-tip": "^6.0.1",
+    "markdown-tip": "^6.1.1",
     "react": "16",
     "react-dom": "16"
   },
   "devDependencies": {
     "@types/react": "16.0.31",
     "@types/react-dom": "16.0.3"
+  },
+  "peerDependencies": {
+    "markdown-tip": "^6.1.1",
+    "react": "16",
+    "react-dom": "16"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "markdown-tip-vue",
-  "version": "6.1.0",
+  "version": "6.1.1",
   "description": "A markdown tip component.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,12 +17,20 @@
     "url": "https://github.com/plantain-00/markdown-tip/issues"
   },
   "homepage": "https://github.com/plantain-00/markdown-tip#readme",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
-    "markdown-tip": "^6.0.1",
+    "markdown-tip": "^6.1.1",
     "vue": "2",
     "vue-class-component": "6"
   },
   "devDependencies": {
     "typescript": "2.6.2"
+  },
+  "peerDependencies": {
+    "markdown-tip": "^6.1.1",
+    "vue": "2",
+    "vue-class-component": "6"
   }
 }

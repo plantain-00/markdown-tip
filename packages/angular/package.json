@@ -1,6 +1,6 @@
 {
   "name": "markdown-tip-angular",
-  "version": "6.1.0",
+  "version": "6.1.1",
   "description": "A markdown tip component.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,11 +14,14 @@
     "url": "https://github.com/plantain-00/markdown-tip/issues"
   },
   "homepage": "https://github.com/plantain-00/markdown-tip#readme",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "@angular/common": "5",
     "@angular/core": "5",
     "@angular/forms": "5",
-    "markdown-tip": "^6.0.1"
+    "markdown-tip": "^6.1.1"
   },
   "devDependencies": {
     "@angular/platform-browser": "5.1.2",
@@ -26,5 +29,11 @@
     "core-js": "2.5.3",
     "rxjs": "5.5.6",
     "zone.js": "0.8.18"
+  },
+  "peerDependencies": {
+    "@angular/common": "5",
+    "@angular/core": "5",
+    "@angular/forms": "5",
+    "markdown-tip": "^6.1.1"
   }
 }
