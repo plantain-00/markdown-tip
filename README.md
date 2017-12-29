@@ -1,3 +1,5 @@
+# markdown-tip
+
 [![Dependency Status](https://david-dm.org/plantain-00/markdown-tip.svg)](https://david-dm.org/plantain-00/markdown-tip)
 [![devDependency Status](https://david-dm.org/plantain-00/markdown-tip/dev-status.svg)](https://david-dm.org/plantain-00/markdown-tip#info=devDependencies)
 [![Build Status: Linux](https://travis-ci.org/plantain-00/markdown-tip.svg?branch=master)](https://travis-ci.org/plantain-00/markdown-tip)
@@ -5,23 +7,22 @@
 [![npm version](https://badge.fury.io/js/markdown-tip.svg)](https://badge.fury.io/js/markdown-tip)
 [![Downloads](https://img.shields.io/npm/dm/markdown-tip.svg)](https://www.npmjs.com/package/markdown-tip)
 
-# markdown-tip
 A markdown tip component.
 
-#### features
+## features
 
 + vuejs component
 + reactjs component
 + angular component
 + multiple-language
 
-#### link css
+## link css
 
 ```html
 <link rel="stylesheet" href="./node_modules/markdown-tip/dist/markdown-tip.css" />
 ```
 
-#### vuejs component
+## vuejs component
 
 `npm i markdown-tip-vue`
 
@@ -33,9 +34,9 @@ import "markdown-tip-vue";
 <markdown-tip></markdown-tip>
 ```
 
-the online demo: https://plantain-00.github.io/markdown-tip/packages/vue/demo
+the online demo: <https://plantain-00.github.io/markdown-tip/packages/vue/demo>
 
-#### reactjs component
+## reactjs component
 
 ```ts
 import { MarkdownTip } from "markdown-tip-react";
@@ -46,9 +47,9 @@ import { MarkdownTip } from "markdown-tip-react";
 </MarkdownTip>
 ```
 
-the online demo: https://plantain-00.github.io/markdown-tip/packages/react/demo
+the online demo: <https://plantain-00.github.io/markdown-tip/packages/react/demo>
 
-#### angular component
+## angular component
 
 ```ts
 import { MarkdownTipModule } from "markdown-tip-angular";
@@ -66,17 +67,17 @@ class MainModule { }
 </markdown-tip>
 ```
 
-the online demo: https://plantain-00.github.io/markdown-tip/packages/angular/demo/jit
+the online demo: <https://plantain-00.github.io/markdown-tip/packages/angular/demo/jit>
 
-the AOT online demo: https://plantain-00.github.io/markdown-tip/packages/angular/demo/aot
+the AOT online demo: <https://plantain-00.github.io/markdown-tip/packages/angular/demo/aot>
 
-#### properties and events of the component
+## properties and events of the component
 
 name | type | description
 --- | --- | ---
 locale | Locale? | locale object
 
-#### change logs
+## change logs
 
 ```bash
 # v5
