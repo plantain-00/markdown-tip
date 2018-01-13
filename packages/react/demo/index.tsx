@@ -1,12 +1,19 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import { MarkdownTip, Locale } from "../dist/";
-
-let locale: Locale | null = null;
+import { MarkdownTip } from "../dist/";
 
 class Main extends React.Component<{}, {}> {
-    private locale = locale;
+    private locale = null;
+
+    componentWillMount() {
+        if (navigator.language === "zh-CN") {
+            import("../../core/dist/locales/" + navigator.language + ".js").then(module => {
+                this.locale = module.locale;
+                this.setState({ locale: this.locale });
+            });
+        }
+    }
 
     render() {
         return (
@@ -19,17 +26,4 @@ class Main extends React.Component<{}, {}> {
     }
 }
 
-function start() {
-    ReactDOM.render(<Main />, document.getElementById("container"));
-}
-
-if (navigator.language === "zh-CN") {
-    import("../../core/dist/locales/" + navigator.language + ".js").then(module => {
-        locale = module.locale;
-        start();
-    }, error => {
-        start();
-    });
-} else {
-    start();
-}
+ReactDOM.render(<Main />, document.getElementById("container"));

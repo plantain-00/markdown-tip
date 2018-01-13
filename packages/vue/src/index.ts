@@ -12,7 +12,9 @@ export * from "markdown-tip";
 export class MarkdownTip extends Vue {
     locale: common.Locale | undefined;
 
-    datas = common.getLocale(this.locale);
+    get datas() {
+        return common.getLocale(this.locale);
+    }
     visibleText: string | null = null;
     titleClass = common.defaultTitleClass;
 

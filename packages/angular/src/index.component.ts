@@ -15,13 +15,11 @@ export class MarkdownTipComponent {
     @Input()
     locale?: common.Locale;
 
-    datas: common.Data[];
+    get datas() {
+        return common.getLocale(this.locale);
+    }
     visibleText: string | null = null;
     titleClass = common.defaultTitleClass;
-
-    ngOnInit() {
-        this.datas = common.getLocale(this.locale);
-    }
 
     mouseenter(data: common.Data, event: MouseEvent) {
         this.visibleText = data.text;
