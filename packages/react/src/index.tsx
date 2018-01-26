@@ -15,17 +15,17 @@ export class MarkdownTip extends React.PureComponent<{ locale?: common.Locale | 
     const items = datas.map((data, i) => {
       const title = data.text === this.visibleText ? <pre className={this.titleClass}>{data.title}</pre> : null
       return (
-                <div className='markdown-tip-item' key={i} onMouseEnter={e => this.mouseenter(data, e)} onMouseLeave={e => this.mouseleave(data)}>
-                    <span className='markdown-tip-item-text'>{data.text}</span>
-                    {title}
-                </div>
+        <div className='markdown-tip-item' key={i} onMouseEnter={e => this.mouseenter(data, e)} onMouseLeave={e => this.mouseleave(data)}>
+          <span className='markdown-tip-item-text'>{data.text}</span>
+          {title}
+        </div>
       )
     })
 
     return (
-            <div className='markdown-tip'>
-                {items}
-            </div>
+      <div className='markdown-tip'>
+        {items}
+      </div>
     )
   }
   private mouseenter (data: common.Data, event: React.MouseEvent<HTMLDivElement>) {

@@ -17,11 +17,11 @@ class Main extends React.Component<{}, {}> {
 
   render () {
     return (
-            <div>
-                <a href='https://github.com/plantain-00/markdown-tip/tree/master/packages/react/demo' target='_blank'>the source code of the demo</a>
-                <MarkdownTip locale={this.locale}>
-                </MarkdownTip>
-            </div>
+      <div>
+        <a href='https://github.com/plantain-00/markdown-tip/tree/master/packages/react/demo' target='_blank'>the source code of the demo</a>
+        <MarkdownTip locale={this.locale}>
+        </MarkdownTip>
+      </div>
     )
   }
 }
