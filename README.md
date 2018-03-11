@@ -30,6 +30,14 @@ A markdown tip component.
 import "markdown-tip-vue";
 ```
 
+or
+
+```html
+<script src="./node_modules/vue/dist/vue.min.js"></script>
+<script src="./node_modules/vue-class-component/dist/vue-class-component.min.js"></script>
+<script src="./node_modules/markdown-tip-vue/dist/markdown-tip-vue.min.js"></script>
+```
+
 ```html
 <markdown-tip></markdown-tip>
 ```
@@ -40,6 +48,14 @@ the online demo: <https://plantain-00.github.io/markdown-tip/packages/vue/demo>
 
 ```ts
 import { MarkdownTip } from "markdown-tip-react";
+```
+
+or
+
+```html
+<script src="./node_modules/react/umd/react.production.min.js"></script>
+<script src="./node_modules/react-dom/umd/react-dom.production.min.js"></script>
+<script src="./node_modules/markdown-tip-react/dist/markdown-tip-react.min.js"></script>
 ```
 
 ```html
