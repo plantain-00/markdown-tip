@@ -3,6 +3,9 @@
   "version": "6.2.0",
   "description": "A markdown tip component.",
   "main": "dist/index.js",
+  "module": "dist/index.js",
+  "unpkg": "dist/markdown-tip-vue.min.js",
+  "jsdelivr": "dist/markdown-tip-vue.min.js",
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
