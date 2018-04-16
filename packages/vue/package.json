@@ -1,0 +1,33 @@
+{
+  "name": "markdown-tip-vue",
+  "version": "6.2.2",
+  "description": "A markdown tip component.",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "unpkg": "dist/markdown-tip-vue.min.js",
+  "jsdelivr": "dist/markdown-tip-vue.min.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plantain-00/markdown-tip.git"
+  },
+  "author": "York Yao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/plantain-00/markdown-tip/issues"
+  },
+  "homepage": "https://github.com/plantain-00/markdown-tip#readme",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "markdown-tip": "^6.2.0",
+    "vue": "2",
+    "vue-class-component": "6"
+  },
+  "peerDependencies": {
+    "markdown-tip": "^6.2.0",
+    "vue": "2",
+    "vue-class-component": "6"
+  }
+}
