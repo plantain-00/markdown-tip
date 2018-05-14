@@ -112,14 +112,14 @@ ext | extension`
 /**
  * @public
  */
-export function getLocale (locale: undefined | null | Locale): Locale {
+export function getLocale(locale: undefined | null | Locale): Locale {
   return locale || defaultLocale
 }
 
 /**
  * @public
  */
-export function getTitleClass (element: HTMLElement) {
+export function getTitleClass(element: HTMLElement) {
   const position = element.getClientRects()[0].left > element.parentElement!.getClientRects()[0].width / 2 ? 'right' : 'left'
   return `markdown-tip-item-title markdown-tip-item-title-${position}`
 }

@@ -12,7 +12,7 @@ import { Component } from '@angular/core'
 export class MainComponent {
   locale = null
 
-  ngOnInit () {
+  ngOnInit() {
     if (navigator.language === 'zh-CN') {
       import('../../core/dist/locales/' + navigator.language + '.js').then(module => {
         this.locale = module.locale

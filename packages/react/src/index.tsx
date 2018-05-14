@@ -1,4 +1,5 @@
 import * as React from 'react'
+// tslint:disable-next-line:no-duplicate-string
 import * as common from 'markdown-tip'
 export * from 'markdown-tip'
 
@@ -9,7 +10,7 @@ export class MarkdownTip extends React.PureComponent<{ locale?: common.Locale | 
   private visibleText: string | null = null
   private titleClass = common.defaultTitleClass
 
-  render () {
+  render() {
     const datas = common.getLocale(this.props.locale)
 
     const items = datas.map((data, i) => {
@@ -28,12 +29,12 @@ export class MarkdownTip extends React.PureComponent<{ locale?: common.Locale | 
       </div>
     )
   }
-  private mouseenter (data: common.Data, event: React.MouseEvent<HTMLDivElement>) {
+  private mouseenter(data: common.Data, event: React.MouseEvent<HTMLDivElement>) {
     this.visibleText = data.text
     this.titleClass = common.getTitleClass(event.target as HTMLElement)
     this.setState({ visibleText: this.visibleText, titleClass: this.titleClass })
   }
-  private mouseleave (data: common.Data) {
+  private mouseleave(data: common.Data) {
     this.visibleText = null
     this.setState({ visibleText: this.visibleText })
   }

@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core'
 
 import { indexTemplateHtml } from './variables'
+// tslint:disable-next-line:no-duplicate-string
 import * as common from 'markdown-tip'
 export * from 'markdown-tip'
 
@@ -13,22 +14,22 @@ export * from 'markdown-tip'
 })
 export class MarkdownTipComponent {
   @Input()
-    locale?: common.Locale
+  locale?: common.Locale
 
-  get datas () {
+  get datas() {
     return common.getLocale(this.locale)
   }
   visibleText: string | null = null
   titleClass = common.defaultTitleClass
 
-  mouseenter (data: common.Data, event: MouseEvent) {
+  mouseenter(data: common.Data, event: MouseEvent) {
     this.visibleText = data.text
     this.titleClass = common.getTitleClass(event.target as HTMLElement)
   }
-  mouseleave (data: common.Data) {
+  mouseleave(data: common.Data) {
     this.visibleText = null
   }
-  trackBy (data: common.Data) {
+  trackBy(data: common.Data) {
     return data.text
   }
 }
