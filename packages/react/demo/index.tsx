@@ -6,7 +6,7 @@ import { MarkdownTip } from '../dist/'
 class Main extends React.Component<{}, {}> {
   private locale = null
 
-  componentWillMount () {
+  componentWillMount() {
     if (navigator.language === 'zh-CN') {
       import('../../core/dist/locales/' + navigator.language + '.js').then(module => {
         this.locale = module.locale
@@ -15,7 +15,7 @@ class Main extends React.Component<{}, {}> {
     }
   }
 
-  render () {
+  render() {
     return (
       <div>
         <a href='https://github.com/plantain-00/markdown-tip/tree/master/packages/react/demo' target='_blank'>the source code of the demo</a>

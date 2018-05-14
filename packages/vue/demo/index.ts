@@ -13,7 +13,7 @@ import '../dist/'
 class App extends Vue {
   locale = null
 
-  beforeCreate () {
+  beforeCreate() {
     if (navigator.language === 'zh-CN') {
       import('../../core/dist/locales/' + navigator.language + '.js').then(module => {
         this.locale = module.locale
