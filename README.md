@@ -24,6 +24,8 @@ A markdown tip component.
 
 ## vuejs component
 
+[![gzip size](https://img.badgesize.io/https://unpkg.com/markdown-tip-vue?compression=gzip)](https://unpkg.com/markdown-tip-vue)
+
 `npm i markdown-tip-vue`
 
 ```ts
@@ -45,6 +47,8 @@ or
 the online demo: <https://plantain-00.github.io/markdown-tip/packages/vue/demo>
 
 ## reactjs component
+
+[![gzip size](https://img.badgesize.io/https://unpkg.com/markdown-tip-react?compression=gzip)](https://unpkg.com/markdown-tip-react)
 
 ```ts
 import { MarkdownTip } from "markdown-tip-react";
