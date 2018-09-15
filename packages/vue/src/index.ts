@@ -11,7 +11,7 @@ export * from 'markdown-tip'
   props: ['locale']
 })
 export class MarkdownTip extends Vue {
-  locale: common.Locale | undefined
+  locale?: common.Locale
 
   get datas() {
     return common.getLocale(this.locale)
