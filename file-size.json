@@ -1,11 +1,11 @@
 {
-  "angularDemoAotIndexBundleJs": "490 kB 128 kB",
-  "angularDemoJitIndexBundleJs": "951 kB 237 kB",
+  "angularDemoAotIndexBundleJs": "494 kB 128 kB",
+  "angularDemoJitIndexBundleJs": "955 kB 237 kB",
   "coreDemoIndexBundleCss": "2.82 kB 822 B",
-  "reactDemoIndexBundleJs": "109 kB 35.6 kB",
+  "reactDemoIndexBundleJs": "110 kB 35.7 kB",
   "vueDemoIndexBundleJs": "101 kB 36.5 kB",
   "packagesAngularDemoAotIndexHtml": "634 B 449 B",
-  "packagesAngularDemoJitIndexHtml": "634 B 451 B",
-  "packagesReactDemoIndexHtml": "646 B 458 B",
+  "packagesAngularDemoJitIndexHtml": "634 B 448 B",
+  "packagesReactDemoIndexHtml": "646 B 456 B",
   "packagesVueDemoIndexHtml": "646 B 455 B"
 }
