@@ -1,6 +1,6 @@
 {
   "name": "markdown-tip-vue",
-  "version": "6.4.0",
+  "version": "6.4.1",
   "description": "A markdown tip component.",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -21,12 +21,7 @@
     "dist"
   ],
   "dependencies": {
-    "markdown-tip": "^6.3.0",
-    "vue": "2",
-    "vue-class-component": "6"
-  },
-  "peerDependencies": {
-    "markdown-tip": "^6.2.0",
+    "markdown-tip": "^6.4.1",
     "vue": "2",
     "vue-class-component": "6"
   }
