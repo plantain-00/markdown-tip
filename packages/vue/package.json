@@ -24,10 +24,5 @@
     "markdown-tip": "^6.3.0",
     "vue": "2",
     "vue-class-component": "6"
-  },
-  "peerDependencies": {
-    "markdown-tip": "^6.2.0",
-    "vue": "2",
-    "vue-class-component": "6"
   }
 }
