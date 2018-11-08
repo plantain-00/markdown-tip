@@ -1,6 +1,6 @@
 {
   "name": "markdown-tip-react",
-  "version": "6.4.0",
+  "version": "6.4.1",
   "description": "A markdown tip component.",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -21,7 +21,7 @@
     "dist"
   ],
   "dependencies": {
-    "markdown-tip": "^6.3.0",
+    "markdown-tip": "^6.4.1",
     "react": "16",
     "react-dom": "16"
   },
