@@ -3,23 +3,23 @@
 
 
 "@angular/common@7":
-  version "7.2.1"
-  resolved "https://registry.yarnpkg.com/@angular/common/-/common-7.2.1.tgz#2b5a54834af4cd9b2e1f4381b74f01df70291834"
-  integrity sha512-lYf3MeVMz69EriS5ANFY5PerJK0i4xHp/Jy67reb8ydZ+sfW320PUMuFtx3bZvk9PD7NdL3QZvXmla/ogrltTQ==
+  version "7.2.2"
+  resolved "https://registry.yarnpkg.com/@angular/common/-/common-7.2.2.tgz#f229eb52e37acf3db4e464c935021713a1d7195b"
+  integrity sha512-43EcR3mbM+dKH4VE1EYS1HxSuEToxxv5XPktKqdzY95g8PBOxe11ifcXoYHgImd7YOWzcKoy0k6yQbX3o0cZ8g==
   dependencies:
     tslib "^1.9.0"
 
 "@angular/core@7":
-  version "7.2.1"
-  resolved "https://registry.yarnpkg.com/@angular/core/-/core-7.2.1.tgz#1ca79a42eec58690ad281c1c3cb260297501f761"
-  integrity sha512-FYNAf4chxBoIVGCW2+fwR2MB2Ur5v1aG9L6zCcMXlZLbR64bu5j2m4e70RhXk/VptKvYWJ45od3xE5KfcaeEig==
+  version "7.2.2"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-7.2.2.tgz#a0081d943f439b7c4fc4bfd877757931ed7edf63"
+  integrity sha512-kQ0HxUYAPvly8b3aibTGbiodFnBBgo3asXAQuPgFjYYEqcKR1zZII7PQdaEF9kb9sfm/IKLKj4nd9fZ0gcgqZg==
   dependencies:
     tslib "^1.9.0"
 
 "@angular/forms@7":
-  version "7.2.1"
-  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-7.2.1.tgz#0515af60668c380602aa820c0df29767002a576a"
-  integrity sha512-MxinNUvl02UfpY9gJtbTU6Mdt9fjIJYOGskcpwm+5u9jiMeRvOnG94ySoNrygg3EWwScX+P0mM4KN6fJWau7gQ==
+  version "7.2.2"
+  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-7.2.2.tgz#d439216db53072f3fe83db877e88db5a56e37c41"
+  integrity sha512-IsvVuUnzIA2ryRmh7l42AANPZFSyNcwqZNtxbmRq2wm3Lfed64U0rsRWWNqipjz7QTxZ2SRdAlP+XDgzg8hvMQ==
   dependencies:
     tslib "^1.9.0"
 
