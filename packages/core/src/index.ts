@@ -1,7 +1,7 @@
 /**
  * @public
  */
-export type Data = {
+export interface Data {
   text: string;
   title: string;
 }
@@ -68,7 +68,7 @@ _This is italic text_`
   },
   {
     text: 'Inline Code',
-    title: 'Inline \`code\`'
+    title: 'Inline `code`'
   },
   {
     text: 'Indented Code',

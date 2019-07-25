@@ -57,7 +57,7 @@ _This is italic text_`
   },
   {
     text: '内联代码',
-    title: 'Inline \`code\`'
+    title: 'Inline `code`'
   },
   {
     text: '缩进代码',
