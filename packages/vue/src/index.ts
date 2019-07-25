@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Component from 'vue-class-component'
 import { indexTemplateHtml, indexTemplateHtmlStatic } from './variables'
-// tslint:disable-next-line:no-duplicate-string
 import * as common from 'markdown-tip'
 export * from 'markdown-tip'
 

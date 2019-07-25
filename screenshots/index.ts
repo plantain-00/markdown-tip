@@ -24,5 +24,5 @@ import puppeteer from 'puppeteer'
     }
   }
 
-  browser.close()
+  await browser.close()
 })()

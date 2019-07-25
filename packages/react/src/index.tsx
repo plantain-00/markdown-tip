@@ -1,5 +1,4 @@
 import * as React from 'react'
-// tslint:disable-next-line:no-duplicate-string
 import * as common from 'markdown-tip'
 export * from 'markdown-tip'
 

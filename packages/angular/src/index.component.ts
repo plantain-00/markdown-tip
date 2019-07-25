@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core'
 
 import { indexTemplateHtml } from './variables'
-// tslint:disable-next-line:no-duplicate-string
 import * as common from 'markdown-tip'
 export * from 'markdown-tip'
 
