@@ -25,7 +25,7 @@ const webpackAngularAotCommand = `webpack --config packages/angular/demo/aot/web
 
 const revStaticCommand = `rev-static`
 const cssCommand = [
-  `lessc packages/core/src/markdown-tip.less -sm=on > packages/core/src/markdown-tip.css`,
+  `lessc packages/core/src/markdown-tip.less --math=strict > packages/core/src/markdown-tip.css`,
   `postcss packages/core/src/markdown-tip.css -o packages/core/dist/markdown-tip.css`,
   `cleancss packages/core/dist/markdown-tip.css -o packages/core/dist/markdown-tip.min.css`,
   `cleancss packages/core/dist/markdown-tip.min.css ./node_modules/github-fork-ribbon-css/gh-fork-ribbon.css -o packages/core/demo/index.bundle.css`
