@@ -14,7 +14,6 @@ A markdown tip component.
 
 + vuejs component
 + reactjs component
-+ angular component
 + multiple-language
 
 ## link css
@@ -69,28 +68,6 @@ or
 ```
 
 the online demo: <https://plantain-00.github.io/markdown-tip/packages/react/demo>
-
-## angular component
-
-```ts
-import { MarkdownTipModule } from "markdown-tip-angular";
-
-@NgModule({
-    imports: [BrowserModule, FormsModule, MarkdownTipModule],
-    declarations: [MainComponent],
-    bootstrap: [MainComponent],
-})
-class MainModule { }
-```
-
-```html
-<markdown-tip>
-</markdown-tip>
-```
-
-the online demo: <https://plantain-00.github.io/markdown-tip/packages/angular/demo/jit>
-
-the AOT online demo: <https://plantain-00.github.io/markdown-tip/packages/angular/demo/aot>
 
 ## properties and events of the component
 
