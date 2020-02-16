@@ -2,7 +2,7 @@
   "name": "markdown-tip-react",
   "version": "6.5.0",
   "description": "A markdown tip component.",
-  "main": "dist/index.js",
+  "main": "dist/markdown-tip-react.min.js",
   "module": "dist/index.js",
   "unpkg": "dist/markdown-tip-react.min.js",
   "jsdelivr": "dist/markdown-tip-react.min.js",
