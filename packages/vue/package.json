@@ -1,8 +1,8 @@
 {
   "name": "markdown-tip-vue",
-  "version": "6.5.0",
+  "version": "6.5.1",
   "description": "A markdown tip component.",
-  "main": "dist/index.js",
+  "main": "dist/markdown-tip-vue.min.js",
   "module": "dist/index.js",
   "unpkg": "dist/markdown-tip-vue.min.js",
   "jsdelivr": "dist/markdown-tip-vue.min.js",
@@ -21,7 +21,7 @@
     "dist"
   ],
   "dependencies": {
-    "markdown-tip": "^6.4.1",
+    "markdown-tip": "^6.5.1",
     "vue": "2",
     "vue-class-component": "7"
   }
