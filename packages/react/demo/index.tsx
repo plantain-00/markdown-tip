@@ -6,7 +6,7 @@ import { MarkdownTip } from '../dist/'
 class Main extends React.Component<{}, {}> {
   private locale = null
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     if (navigator.language === 'zh-CN') {
       import('../../core/dist/locales/' + navigator.language + '.js').then(module => {
         this.locale = module.locale
