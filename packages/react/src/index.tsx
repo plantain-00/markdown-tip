@@ -5,7 +5,7 @@ export * from 'markdown-tip'
 /**
  * @public
  */
-export class MarkdownTip extends React.PureComponent<{ locale?: common.Locale | null }, {}> {
+export class MarkdownTip extends React.PureComponent<{ locale?: common.Locale | null }, unknown> {
   private visibleText: string | null = null
   private titleClass = common.defaultTitleClass
 

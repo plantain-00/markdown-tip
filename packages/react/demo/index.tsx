@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom'
 
 import { MarkdownTip } from '../dist/'
 
-class Main extends React.Component<{}, {}> {
+class Main extends React.Component<unknown, unknown> {
   private locale = null
 
   UNSAFE_componentWillMount() {
