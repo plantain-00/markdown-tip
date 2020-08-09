@@ -17,9 +17,6 @@
     "url": "https://github.com/plantain-00/markdown-tip/issues"
   },
   "homepage": "https://github.com/plantain-00/markdown-tip#readme",
-  "files": [
-    "dist"
-  ],
   "dependencies": {
     "markdown-tip": "^6.5.1",
     "react": "16",
@@ -28,5 +25,8 @@
   "devDependencies": {
     "@types/react": "16.9.44",
     "@types/react-dom": "16.9.8"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
