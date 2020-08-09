@@ -14,10 +14,10 @@
     "url": "https://github.com/plantain-00/markdown-tip/issues"
   },
   "homepage": "https://github.com/plantain-00/markdown-tip#readme",
-  "files": [
-    "dist"
-  ],
   "dependencies": {
     "tslib": "2"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
