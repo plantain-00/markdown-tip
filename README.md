@@ -30,7 +30,8 @@ A markdown tip component.
 `npm i markdown-tip-vue`
 
 ```ts
-import "markdown-tip-vue";
+import { MarkdownTip } from "markdown-tip-vue"
+app.component('markdown-tip', MarkdownTip)
 ```
 
 or
@@ -77,6 +78,16 @@ name | type | description
 locale | Locale? | locale object
 
 ## change logs
+
+```ts
+# v6
+// vue 2
+import 'markdown-tip-vue'
+# v7
+// vue 3
+import { MarkdownTip } from "markdown-tip-vue"
+app.component('markdown-tip', MarkdownTip)
+```
 
 ```bash
 # v5

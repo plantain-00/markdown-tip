@@ -1,25 +1,26 @@
-import Vue from 'vue'
-import Component from 'vue-class-component'
-import '../dist/'
+import { createApp, defineComponent } from 'vue'
+import { MarkdownTip } from '../dist/'
 
-@Component({
-  template: `
-    <div>
-        <a href="https://github.com/plantain-00/markdown-tip/tree/master/packages/vue/demo" target="_blank">the source code of the demo</a>
-        <markdown-tip :locale="locale"></markdown-tip>
-    </div>
-    `
-})
-class App extends Vue {
-  locale = null
-
+const App = defineComponent({
+  data: () => {
+    return {
+      locale: null,
+    }
+  },
   beforeCreate() {
     if (navigator.language === 'zh-CN') {
       import('../../core/dist/locales/' + navigator.language + '.js').then(module => {
         this.locale = module.locale
       })
     }
-  }
-}
+  },
+  template: `
+    <div>
+        <a href="https://github.com/plantain-00/markdown-tip/tree/master/packages/vue/demo" target="_blank">the source code of the demo</a>
+        <markdown-tip :locale="locale"></markdown-tip>
+    </div>`
+})
 
-new App({ el: '#container' })
+const app = createApp(App)
+app.component('markdown-tip', MarkdownTip)
+app.mount('#container')
