@@ -1,6 +1,6 @@
 {
   "name": "markdown-tip-vue",
-  "version": "6.5.1",
+  "version": "7.0.0",
   "description": "A markdown tip component.",
   "main": "dist/markdown-tip-vue.min.js",
   "module": "dist/index.js",
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/plantain-00/markdown-tip#readme",
   "dependencies": {
-    "markdown-tip": "^6.5.1",
+    "markdown-tip": "^7.0.0",
     "vue": "3"
   },
   "publishConfig": {
