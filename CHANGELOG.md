@@ -1,5 +1,9 @@
 # Change Log
 
+## [7.0.1](https://github.com/plantain-00/markdown-tip/compare/v7.0.0...v7.0.1) (2020-09-28)
+  
+* fix: release error ([5674c3d](https://github.com/plantain-00/markdown-tip/commit/5674c3da994d497ebd3423687fbd58b9482a17f1))
+
 ## [7.0.0](https://github.com/plantain-00/markdown-tip/compare/v6.5.1...v7.0.0) (2020-09-27)
   
 * feat: support vue3 ([89b02f7](https://github.com/plantain-00/markdown-tip/commit/89b02f76ff308cf545aa63b5ba858431484deb11))
