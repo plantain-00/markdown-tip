@@ -1,5 +1,9 @@
 # Change Log
 
+## [7.0.2](https://github.com/plantain-00/markdown-tip/compare/v7.0.1...v7.0.2) (2020-09-29)
+  
+* chore: update dependencies ([d728570](https://github.com/plantain-00/markdown-tip/commit/d72857072e8c9d0e749dd94ee3a49e57d15ae5bd))
+
 ## [7.0.1](https://github.com/plantain-00/markdown-tip/compare/v7.0.0...v7.0.1) (2020-09-28)
   
 * fix: release error ([5674c3d](https://github.com/plantain-00/markdown-tip/commit/5674c3da994d497ebd3423687fbd58b9482a17f1))
