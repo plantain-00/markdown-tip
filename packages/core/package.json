@@ -1,6 +1,6 @@
 {
   "name": "markdown-tip",
-  "version": "8.0.0",
+  "version": "7.1.0",
   "description": "A markdown tip component.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

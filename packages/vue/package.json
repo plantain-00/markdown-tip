@@ -1,6 +1,6 @@
 {
   "name": "markdown-tip-vue",
-  "version": "8.0.0",
+  "version": "7.1.0",
   "description": "A markdown tip component.",
   "main": "dist/markdown-tip-vue.min.js",
   "module": "dist/index.js",
