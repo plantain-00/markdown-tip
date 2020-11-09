@@ -1,5 +1,10 @@
 # Change Log
 
+## [8.0.0](https://github.com/plantain-00/markdown-tip/compare/v7.0.2...v8.0.0) (2020-11-09)
+  
+* chore: update dependencies ([c4c29aa](https://github.com/plantain-00/markdown-tip/commit/c4c29aa7c3d301986d35486e9583ae924ca5c09d)) ([57d1187](https://github.com/plantain-00/markdown-tip/commit/57d1187fa0d3cc51ef7a38d3a531083a75a90a6e)) ([d611ba4](https://github.com/plantain-00/markdown-tip/commit/d611ba4e0b521af1522f2b28a774b552964a6222)) ([188c90a](https://github.com/plantain-00/markdown-tip/commit/188c90a9827f0b3d8e1188ebd5e4e604d387348e)) ([b1ecb2c](https://github.com/plantain-00/markdown-tip/commit/b1ecb2cbf4e90b57866bfee571ad77441229a007)) ([3f490c6](https://github.com/plantain-00/markdown-tip/commit/3f490c60dd09bee79dac334a9ff3805319d9e044))
+* docs: remove unused vue-class-component ([72f5e1e](https://github.com/plantain-00/markdown-tip/commit/72f5e1ef3d4cbe195f1dbb9b9d821f1565daadbb))
+
 ## [7.0.2](https://github.com/plantain-00/markdown-tip/compare/v7.0.1...v7.0.2) (2020-09-29)
   
 * chore: update dependencies ([d728570](https://github.com/plantain-00/markdown-tip/commit/d72857072e8c9d0e749dd94ee3a49e57d15ae5bd))
